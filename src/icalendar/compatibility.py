@@ -14,10 +14,7 @@ from typing import TYPE_CHECKING
 try:
     from typing import Self
 except ImportError:
-    try:
-        from typing_extensions import Self
-    except ImportError:
-        Self = "Self"
+    from typing_extensions import Self
 
 if TYPE_CHECKING:
     import sys
